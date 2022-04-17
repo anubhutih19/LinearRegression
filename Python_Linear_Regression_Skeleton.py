@@ -1,13 +1,14 @@
-#!/usr/bin/env python
-# coding: utf-8
+
 
 # # Project: Linear Regression
 # 
-# Reggie is a mad scientist who has been hired by the local fast food joint to build their newest ball pit in the play area. As such, he is working on researching the bounciness of different balls so as to optimize the pit. He is running an experiment to bounce different sizes of bouncy balls, and then fitting lines to the data points he records. He has heard of linear regression, but needs your help to implement a version of linear regression in Python.
+#A scientist has been hired by the local fast food joint to build their newest ball pit in the play area. 
+#As such, he is working on researching the bounciness of different balls so as to optimize the pit. 
+#He is running an experiment to bounce different sizes of bouncy balls, and then fitting lines to the data points he records.  
+#A good Linear Regression algorithm minimizes the _error_, or the distance from each point to the line. 
+#A line with the least error is the line that fits the data the best. We call this a line of _best fit_.
 # 
-# _Linear Regression_ is when you have a group of points on a graph, and you find a line that approximately resembles that group of points. A good Linear Regression algorithm minimizes the _error_, or the distance from each point to the line. A line with the least error is the line that fits the data the best. We call this a line of _best fit_.
-# 
-# We will use loops, lists, and arithmetic to create a function that will find a line of best fit when given a set of data.
+# We will use Python loops, lists, and arithmetic to create a function that will find a line of best fit when given a set of data.
 # 
 
 # ## Part 1: Calculating Error
@@ -76,7 +77,7 @@ print(calculate_error(1, -1, (3, 3)))
 print(calculate_error(-1, 1, (3, 3)))
 
 
-# Great! Reggie's datasets will be sets of points. For example, he ran an experiment comparing the width of bouncy balls to how high they bounce:
+Reggie's datasets will be sets of points. For example, he ran an experiment comparing the width of bouncy balls to how high they bounce:
 # 
 
 # In[4]:
@@ -129,7 +130,7 @@ datapoints = [(1, 1), (3, 3), (5, 5), (-1, -1)]
 print(calculate_all_error(-1, 1, datapoints))
 
 
-# Great! It looks like we now have a function that can take in a line and Reggie's data and return how much error that line produces when we try to fit it to the data.
+#It looks like we now have a function that can take in a line and Reggie's data and return how much error that line produces when we try to fit it to the data.
 # 
 # Our next step is to find the `m` and `b` that minimizes this error, and thus fits the data best!
 # 
@@ -234,7 +235,7 @@ get_y(0.3,1.7,6)
 get_y(0.5,2.7,5)
 
 
-# In[ ]:
+
 
 
 
